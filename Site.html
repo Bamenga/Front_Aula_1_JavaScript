@@ -4,17 +4,23 @@
 
     <h2>O que o JavaScript pode fazer ?</h2>
 
-    <p id ="demo">JavaScript pode mudar o conteúdo do HTML.</p>
+    <p id="demo">JavaScript pode mudar o conteúdo do HTML.</p>
 
     <button type="button" onclick='document.getElementById("demo").innerHTML = "Olá JavaScript!"'>Click Me!</button>
 
-    <p id ="style">JavaScript pode mudar o estilo de um elemento do HTML.</p>
+    <p id="style">JavaScript pode mudar o estilo de um elemento do HTML.</p>
 
     <button type="button" onclick="document.getElementById('style').style.fontSize = '35px'">Aumente Me!</button>
 
-    <p id ="hide">JavaScript pode exibir elementos escondidos do HTML.</p>
+    <p id="hide" style="display: none">JavaScript pode exibir elementos escondidos do HTML.</p>
 
     <button type="button" onclick="document.getElementById('hide').style.display = 'block'">Apareça !</button>
+
+    <button onclick="document.getElementById('myImage').src = 'Lamp_On.jpg'">Ligue a Luz</button>
+
+    <img id="myImage" src="Lamp_Off.jpg" style="width:275px">
+
+    <button onclick="document.getElementById('myImage').src = 'Lamp_Off.jpg'">Apague a Luz</button>
 
 </body>
 </html>

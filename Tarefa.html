@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minha Primeira Aula de JavaScript</title>
+    <style>
+        body {
+            background-color: hsl(197, 100%, 92%); 
+            text-align: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Primeira Aula de FrontEnd</h1>
+    
+    <h2>Mudar texto:</h2>
+    <p id="texto">Texto original.</p>
+    <button onclick="document.getElementById('texto').innerHTML = 'Texto Alterado'">Mudar texto</button>
+    
+    <h2>Mudar cor:</h2>
+    <p id="cor">Este texto vai mudar de cor.</p>
+    <button onclick="document.getElementById('cor').style.color = 'blue'">Mudar para Azul</button>
+    
+    <h2>Mudar tamanho:</h2>
+    <p id="tamanho">Este texto vai ficar maior.</p>
+    <button onclick="document.getElementById('tamanho').style.fontSize = '35px'">Aumentar texto</button>
+    
+    <h2>Mostrar texto escondido:</h2>
+    <p id="escondido" style="display: none;">Texto Exibido</p>
+    <button onclick="document.getElementById('escondido').style.display = 'block'">Mostrar texto</button>
+    
+    <h2>Trocar imagem:</h2>
+    <img id="myImage" src="Lamp_Off.jpg" style="width:275px">
+    <br>
+    <button onclick="document.getElementById('myImage').src = 'Lamp_On.jpg'">Ligue a Luz</button>
+    <button onclick="document.getElementById('myImage').src = 'Lamp_Off.jpg'">Apague a Luz</button>
+    
+</body>
+</html>
